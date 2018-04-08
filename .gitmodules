@@ -13,3 +13,6 @@
 [submodule "vim/pack/stvdr/start/vim-tmux-navigator"]
 	path = vim/pack/stvdr/start/vim-tmux-navigator
 	url = https://github.com/christoomey/vim-tmux-navigator.git
+[submodule "vim/pack/stvdr/start/vim-delve"]
+	path = vim/pack/stvdr/start/vim-delve
+	url = https://github.com/sebdah/vim-delve.git
