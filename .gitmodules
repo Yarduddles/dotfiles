@@ -1,0 +1,6 @@
+[submodule "vim/pack/stvdr/start/vim-airline"]
+	path = vim/pack/stvdr/start/vim-airline
+	url = https://github.com/vim-airline/vim-airline.git
+[submodule "vim/pack/stvdr/start/gruvbox"]
+	path = vim/pack/stvdr/start/gruvbox
+	url = https://github.com/morhetz/gruvbox.git
