@@ -1,0 +1,101 @@
+" Load packages from the dotfiles/vim location
+set runtimepath+=~/dotfiles/vim
+set packpath=~/dotfiles/vim
+
+" All yanks will copy to clipboard
+set clipboard+=unnamedplus
+
+set cursorline
+set nu
+set colorcolumn=120
+set mouse=a
+
+" gruvbox is installed as a vim-8 plugin
+colorscheme gruvbox
+set background=dark
+set termguicolors
+
+" invoke ctrlp with ctrl-f
+let g:ctrlp_map = '<c-f>'
+let g:ctrlp_cmd = 'CtrlP'
+let g:ctrlp_working_path_mode = 'ra'
+let g:ctrlp_user_command = ['.git', 'cd %s && git ls-files -co --exclude-standard']
+
+
+" lines of history
+set history=10000
+
+" enable filetype plugins
+filetype plugin on
+filetype indent on
+
+" Set to auto read when a file is changed from the outside
+set autoread
+
+let mapleader = ","
+let g:mapleader = ","
+
+" Set 7 lines to the cursor when moving vertically
+set so=7
+
+set ruler
+
+set cmdheight=2
+
+" ignore case when searching
+set ignorecase
+
+" make search act like search in modern browser
+set incsearch
+
+" show matching brackets
+set showmatch
+
+" no sounds
+set noerrorbells
+set novisualbell
+set t_vb=
+set tm=500
+
+set nobackup
+set nowb
+set noswapfile
+
+set expandtab
+set smarttab
+set shiftwidth=2
+set tabstop=2
+
+set ai "Auto indent
+set si "Smart indent
+set wrap "Wrap lines
+
+" Visual mode pressing * or # searches for the current selection
+" Super useful! From an idea by Michael Naumann
+vnoremap <silent> * :<C-u>call VisualSelection('', '')<CR>/<C-R>=@/<CR><CR>
+vnoremap <silent> # :<C-u>call VisualSelection('', '')<CR>?<C-R>=@/<CR><CR>
+
+" Smart way to move between windows
+map <C-j> <C-W>j
+map <C-k> <C-W>k
+map <C-h> <C-W>h
+map <C-l> <C-W>l
+
+" Return to last edit position when opening files
+au BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g'\"" | endif
+
+" Always show the status line
+set laststatus=2
+
+" Format the status line
+"set statusline=\ %{HasPaste()}%F%m%r%h\ %w\ \ CWD:\ %r%{getcwd()}%h\ \ \ Line:\ %l\ \ Column:\ %c
+
+" Write contents of file automatically when calling things like :GoBuild
+set autowrite
+
+" quickfix shortcuts
+map <C-n> :cnext<CR>
+map <C-m> :cprevious<CR>
+nnoremap <leader>a :cclose<CR>
+
+source ~/dotfiles/vim/go-vimrc
