@@ -1,0 +1,27 @@
+export ZSH=/Users/siannelli/.oh-my-zsh
+
+ZSH_THEME="sunaku"
+
+COMPLETION_WAITING_DOTS="true"
+
+plugins=(
+  git,
+  pyenv,
+  vi-mode,
+  last-working-dir,
+  docker
+)
+
+source $ZSH/oh-my-zsh.sh
+
+# Preferred editor for local and remote sessions
+if [[ -n $SSH_CONNECTION ]]; then
+  export EDITOR='vim'
+else
+  export EDITOR='nvim'
+fi
+
+# ssh
+export SSH_KEY_PATH="~/.ssh/rsa_id"
+
+alias vim=nvim
