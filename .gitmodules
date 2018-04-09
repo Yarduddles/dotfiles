@@ -16,3 +16,6 @@
 [submodule "vim/pack/stvdr/start/vim-delve"]
 	path = vim/pack/stvdr/start/vim-delve
 	url = https://github.com/sebdah/vim-delve.git
+[submodule "vim/pack/stvdr/start/thrift.vim"]
+	path = vim/pack/stvdr/start/thrift.vim
+	url = https://github.com/solarnz/thrift.vim.git

@@ -25,3 +25,6 @@ fi
 export SSH_KEY_PATH="~/.ssh/rsa_id"
 
 alias vim=nvim
+
+# golang
+export PATH=$PATH:$HOME/go/bin
