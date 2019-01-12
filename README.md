@@ -1,5 +1,12 @@
 # Initialize
 
+Before setting this, install the following software:
+
+- vim8 
+- zsh
+- oh-my-zsh
+- tmux
+
 To copy dotfiles to their necessary locations:
 
 ```bash

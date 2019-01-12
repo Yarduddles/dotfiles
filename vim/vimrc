@@ -13,7 +13,7 @@ set mouse=a
 " gruvbox is installed as a vim-8 plugin
 colorscheme gruvbox
 set background=dark
-set termguicolors
+"set termguicolors
 
 " invoke ctrlp with ctrl-f
 let g:ctrlp_map = '<c-f>'
