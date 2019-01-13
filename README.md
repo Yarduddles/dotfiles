@@ -7,6 +7,12 @@ Before setting this, install the following software:
 - oh-my-zsh
 - tmux
 
+After this repository is cloned, make sure to pull all submodules:
+
+```bash
+git submodule update --init --recursive
+```
+
 To copy dotfiles to their necessary locations:
 
 ```bash
