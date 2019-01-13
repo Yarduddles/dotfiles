@@ -7,6 +7,12 @@ Before setting this, install the following software:
 - oh-my-zsh
 - tmux
 
+Clone this repository into the home directory:
+
+```bash
+cd ~ && git clone https://github.com/stvdr/dotfiles.git
+```
+
 After this repository is cloned, make sure to pull all submodules:
 
 ```bash
