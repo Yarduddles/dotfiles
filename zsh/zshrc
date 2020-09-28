@@ -5,10 +5,10 @@ ZSH_THEME="sunaku"
 COMPLETION_WAITING_DOTS="true"
 
 plugins=(
-  git,
-  pyenv,
-  vi-mode,
-  last-working-dir,
+  git
+  pyenv
+  vi-mode
+  last-working-dir
   docker
 )
 
