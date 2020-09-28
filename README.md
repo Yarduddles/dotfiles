@@ -3,9 +3,12 @@
 Before setting this, install the following software:
 
 - vim8 
-- zsh
 - oh-my-zsh
 - tmux
+
+### Linux specific initialization
+
+- zsh
 
 Clone this repository into the home directory:
 
